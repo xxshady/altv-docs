@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Overview of References </title>
+    <title>Data Files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Overview of References ">
+    <meta name="title" content="Data Files ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -128,22 +128,458 @@
                                 <span class="small pull-right article mobile-hide" style="margin: 0;">
                                     <ul class="subnav contribution">
                                             <li>
-                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/references/index.md/#L1">Improve this Doc</a>
+                                                <a href="https://github.com/altmp/altv-docs-gta/blob/master/articles/references/data-files.md/#L1">Improve this Doc</a>
                                             </li>
                                     </ul>
                                 </span>
 
-<h1 id="overview-of-references">Overview of References</h1>
+<h1 id="data-files">Data Files</h1>
 
-<p><a href="ambient-zones.html">Ambient Zones</a> <br>
-<a href="audio-flags.html">Audio Flags</a> <br>
-<a href="controls.html">Controls</a> <br>
-<a href="data-files.html">Data Files</a> <br>
-<a href="dlcs.html">DLCs</a> <br>
-<a href="interiors-and-locations.html">Interiors &amp; Locations</a> <br>
-<a href="time-and-date.html">Time &amp; Date</a> <br>
-<a href="versions.html">Versions</a> <br>
-<a href="trains.html">Trains</a></p>
+<h1 id="data-file-list">Data File List</h1>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>File type</th>
+<th>Root element</th>
+<th>Mounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACTION_TABLE_DEFINITIONS</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ALTERNATE_VARIATIONS_FILE</td>
+<td></td>
+<td></td>
+<td>CPedVariationStreamFileMounter</td>
+</tr>
+<tr>
+<td>AMBIENT_PED_MODEL_SET_FILE</td>
+<td></td>
+<td></td>
+<td>AmbientModelSetMounter</td>
+</tr>
+<tr>
+<td>AMBIENT_PROP_MODEL_SET_FILE</td>
+<td></td>
+<td></td>
+<td>AmbientModelSetMounter</td>
+</tr>
+<tr>
+<td>AMBIENT_VEHICLE_MODEL_SET_FILE</td>
+<td></td>
+<td></td>
+<td>AmbientModelSetMounter</td>
+</tr>
+<tr>
+<td>AUDIO_DYNAMIXDATA</td>
+<td></td>
+<td></td>
+<td>audMetadataDataFileMounter</td>
+</tr>
+<tr>
+<td>AUDIO_GAMEDATA</td>
+<td></td>
+<td></td>
+<td>audMetadataDataFileMounter</td>
+</tr>
+<tr>
+<td>AUDIO_SOUNDDATA</td>
+<td></td>
+<td></td>
+<td>audMetadataDataFileMounter</td>
+</tr>
+<tr>
+<td>AUDIO_SPEECHDATA</td>
+<td></td>
+<td></td>
+<td>audSpeechDataFileMounter</td>
+</tr>
+<tr>
+<td>AUDIO_SYNTHDATA</td>
+<td></td>
+<td></td>
+<td>audMetadataDataFileMounter</td>
+</tr>
+<tr>
+<td>AUDIO_WAVEPACK</td>
+<td>Folder containing wave packs</td>
+<td>N/A</td>
+<td>audWavePackDataFileMounter</td>
+</tr>
+<tr>
+<td>CARCOLS_FILE</td>
+<td>Vehicle model variation data</td>
+<td>CVehicleModelInfoVarGlobal</td>
+<td>CVehicleColorsDataFileMounter</td>
+</tr>
+<tr>
+<td>CLIP_SETS_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>CONDITIONAL_ANIMS_FILE</td>
+<td></td>
+<td></td>
+<td>ConditionalAnimationsMounter</td>
+</tr>
+<tr>
+<td>CONTENT_UNLOCKING_META_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>DLC_ITYP_REQUEST</td>
+<td>Equivalent of in level metas</td>
+<td>N/A</td>
+<td>CDLCItypFileMounter</td>
+</tr>
+<tr>
+<td>DLC_SCRIPT_METAFILE</td>
+<td></td>
+<td></td>
+<td>CDLCScriptDataMounter</td>
+</tr>
+<tr>
+<td>DLC_WEAPON_PICKUPS</td>
+<td></td>
+<td></td>
+<td>CPickupDataManagerMounter</td>
+</tr>
+<tr>
+<td>EXPLOSIONFX_FILE</td>
+<td></td>
+<td></td>
+<td>CVfxExplosionFileMounter</td>
+</tr>
+<tr>
+<td>EXPLOSION_INFO_FILE</td>
+<td></td>
+<td></td>
+<td>CExplosionFileMounter</td>
+</tr>
+<tr>
+<td>EXTRA_FOLDER_MOUNT_DATA</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>EXTRA_TITLE_UPDATE_DATA</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>GTXD_PARENTING_DATA</td>
+<td>TXD parent/child relationships for maps</td>
+<td>CMapParentTxds</td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>HANDLING_FILE</td>
+<td>Handling data XML</td>
+<td>CHandlingDataMgr</td>
+<td>CVehicleHandlingFileMounter</td>
+</tr>
+<tr>
+<td>INTERIOR_PROXY_ORDER_FILE</td>
+<td></td>
+<td></td>
+<td>CInteriorProxyFileMounter</td>
+</tr>
+<tr>
+<td>LOADOUTS_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>MOVE_NETWORK_DEFS</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>MP_STATS_DISPLAY_LIST_FILE</td>
+<td></td>
+<td></td>
+<td>CStatsDisplayListFileMounter</td>
+</tr>
+<tr>
+<td>MP_STATS_UI_LIST_FILE</td>
+<td></td>
+<td></td>
+<td>CStatsUIListFileMounter</td>
+</tr>
+<tr>
+<td>OVERLAY_INFO_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>PEDSTREAM_FILE</td>
+<td></td>
+<td></td>
+<td>CPedVariationStreamFileMounter</td>
+</tr>
+<tr>
+<td>PED_BOUNDS_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_BRAWLING_STYLE_FILE</td>
+<td></td>
+<td></td>
+<td>CBrawlingStyleMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_COMPONENT_SETS_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_DAMAGE_APPEND_FILE</td>
+<td></td>
+<td></td>
+<td>CPedDamageDataMounter</td>
+</tr>
+<tr>
+<td>PED_FIRST_PERSON_ALTERNATE_DATA</td>
+<td></td>
+<td></td>
+<td>CPedVariationStreamFileMounter</td>
+</tr>
+<tr>
+<td>PED_FIRST_PERSON_ASSET_DATA</td>
+<td></td>
+<td></td>
+<td>CPedVariationStreamFileMounter</td>
+</tr>
+<tr>
+<td>PED_METADATA_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_OVERLAY_FILE</td>
+<td></td>
+<td></td>
+<td>CPedDecorationsDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_PERCEPTION_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_PERSONALITY_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>PED_TASK_DATA_FILE</td>
+<td></td>
+<td></td>
+<td>CPedModelMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>POPSCHED_FILE</td>
+<td>Population scheduling data override</td>
+<td>N/A</td>
+<td>CPopulationDataFileMounter</td>
+</tr>
+<tr>
+<td>PTFXASSETINFO_FILE</td>
+<td></td>
+<td></td>
+<td>CVisualEffectsFileMounter</td>
+</tr>
+<tr>
+<td>SCALEFORM_DLC_FILE</td>
+<td></td>
+<td></td>
+<td>CScaleformPreallocationDataFileMounter</td>
+</tr>
+<tr>
+<td>SCENARIO_INFO_FILE</td>
+<td></td>
+<td></td>
+<td>ScenarioInfoMounter</td>
+</tr>
+<tr>
+<td>SCENARIO_POINTS_PSO_FILE</td>
+<td></td>
+<td></td>
+<td>ScenarioPointMounter</td>
+</tr>
+<tr>
+<td>SCRIPTFX_FILE</td>
+<td></td>
+<td></td>
+<td>CVFXScriptFileMounter</td>
+</tr>
+<tr>
+<td>SHOP_PED_APPAREL_META_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>SP_STATS_DISPLAY_LIST_FILE</td>
+<td></td>
+<td></td>
+<td>CStatsDisplayListFileMounter</td>
+</tr>
+<tr>
+<td>SP_STATS_UI_LIST_FILE</td>
+<td></td>
+<td></td>
+<td>CStatsUIListFileMounter</td>
+</tr>
+<tr>
+<td>STREAMING_REQUEST_LISTS_FILE</td>
+<td></td>
+<td></td>
+<td>SRLMounter</td>
+</tr>
+<tr>
+<td>TATTOO_SHOP_DLC_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>TEXTFILE_METAFILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>TIMECYCLEMOD_FILE</td>
+<td></td>
+<td></td>
+<td>TimeCycleFileMounter</td>
+</tr>
+<tr>
+<td>TRAINCONFIGS_FILE</td>
+<td></td>
+<td></td>
+<td>CTrainConfigFileMounter</td>
+</tr>
+<tr>
+<td>TRAINTRACK_FILE</td>
+<td></td>
+<td></td>
+<td>CTrainConfigFileMounter</td>
+</tr>
+<tr>
+<td>VEHICLEEXTRAS_FILE</td>
+<td></td>
+<td></td>
+<td>CVehicleExtrasFileMounter</td>
+</tr>
+<tr>
+<td>VEHICLE_LAYOUTS_FILE</td>
+<td></td>
+<td></td>
+<td>CVehicleMetadataFileMounter</td>
+</tr>
+<tr>
+<td>VEHICLE_METADATA_FILE</td>
+<td></td>
+<td></td>
+<td>CVehicleMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>VEHICLE_SHOP_DLC_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraContentFileMounter</td>
+</tr>
+<tr>
+<td>VEHICLE_VARIATION_FILE</td>
+<td></td>
+<td></td>
+<td>CVehicleVariationDataFileMounter</td>
+</tr>
+<tr>
+<td>VFXVEHICLEINFO_FILE</td>
+<td></td>
+<td></td>
+<td>CVfxVehicleInfoFileMounter</td>
+</tr>
+<tr>
+<td>WEAPONCOMPONENTSINFO_FILE</td>
+<td></td>
+<td></td>
+<td>CWeaponComponentDataFileMounter</td>
+</tr>
+<tr>
+<td>WEAPONINFO_FILE</td>
+<td></td>
+<td></td>
+<td>CWeaponInfoDataFileMounter</td>
+</tr>
+<tr>
+<td>WEAPONINFO_FILE_PATCH</td>
+<td></td>
+<td></td>
+<td>CWeaponInfoDataFileMounter</td>
+</tr>
+<tr>
+<td>WEAPON_ANIMATIONS_FILE</td>
+<td></td>
+<td></td>
+<td>CWeaponAnimationsDataFileMounter</td>
+</tr>
+<tr>
+<td>WEAPON_METADATA_FILE</td>
+<td></td>
+<td></td>
+<td>CWeaponMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>WEAPON_SHOP_INFO_METADATA_FILE</td>
+<td></td>
+<td></td>
+<td>CExtraMetaDataFileMounter</td>
+</tr>
+<tr>
+<td>ZONEBIND_FILE</td>
+<td></td>
+<td></td>
+<td>CPopulationDataFileMounter</td>
+</tr>
+</tbody>
+</table>
+<h1 id="examples">Examples</h1>
+<h2 id="vehicles">Vehicles</h2>
+<pre><code>stream/vehicles.meta: VEHICLE_METADATA_FILE
+stream/carvariations.meta: VEHICLE_VARIATION_FILE
+stream/dlctext.meta: VEHICLE_VARIATION_FILE
+stream/handling.meta: HANDLING_FILE
+stream/carcols.meta: CARCOLS_FILE
+stream/audio/sfx/dlc_meteor: AUDIO_WAVEPACK
+stream/audio/meteor_game.dat: AUDIO_GAMEDATA
+stream/audio/meteor_sounds.dat: AUDIO_SOUNDDATA
+stream/audio/meteor_amp.dat: AUDIO_SYNTHDATA
+</code></pre>
 </article>
                     </div>
 

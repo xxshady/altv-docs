@@ -26547,11 +26547,47 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/ambient-zones.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/ambient-zones.html",
+          "hash": "Djeq3VuaNrxsFuLGneLzEUDOJ3I8vjbqgsyMiEM+/3g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/audio-flags.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/audio-flags.html",
+          "hash": "RNyFEcQZGoKn1TqcZ/J1+ICZrDqpmrscn3mLxk5k0kY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "altv-docs-gta/articles/references/controls.md",
       "output": {
         ".html": {
           "relative_path": "gta/articles/references/controls.html",
           "hash": "/sExhI5owj2irb3AKCs4H9LJVKoj/bX76ZHwQE1jHQg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/data-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/data-files.html",
+          "hash": "PTx4bIJ5znM79da9F33oBHudP6GynLfYiRBTLDlCBuY="
         }
       },
       "is_incremental": false,
@@ -26571,11 +26607,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/hudcomponents.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/hudcomponents.html",
+          "hash": "mStz0kJWRa6FcIKUxPmKwLQegEqZN3UlpJmzvmhAyME="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "altv-docs-gta/articles/references/index.md",
       "output": {
         ".html": {
           "relative_path": "gta/articles/references/index.html",
-          "hash": "6qsv0UYzo0vbeAHCq3vcvGXbvZGWqcwfvCN2svZgSrc="
+          "hash": "J1RDb6RlXtTZys7eNUIgjNJ3gd5tnfQ6h0JCW4UoADw="
         }
       },
       "is_incremental": false,
@@ -26587,7 +26635,7 @@
       "output": {
         ".html": {
           "relative_path": "gta/articles/references/interiors-and-locations.html",
-          "hash": "1o3rC0aGxUxgvXkP/Hm1EHXzejlXYzNJhrtJzCLTB+k="
+          "hash": "jTndsY2iZgZsJgmnVPH/O/u+jYa4cowJb4q0AGmd1ZQ="
         }
       },
       "is_incremental": false,
@@ -26624,6 +26672,54 @@
         ".html": {
           "relative_path": "gta/articles/references/versions.html",
           "hash": "oU1XU60gDStik6j85EMvNmMbfMicMVwHECD7GCXlhi0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/references/ybn.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/references/ybn.html",
+          "hash": "wgl02ysfW9Ni19dciF6SSzNXd5HHZAro0/YG3m+Y5oY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/cayo-perico.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/cayo-perico.html",
+          "hash": "WmVaEbVdTWeRyumXGu5PWkpNaBCGWGDUeAJQ2sLv3LQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/index.html",
+          "hash": "zYFFjhglJuQyDptTLzWJA8S+mzRnR66b0efbEY+YZCM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "altv-docs-gta/articles/snippets/request-model.md",
+      "output": {
+        ".html": {
+          "relative_path": "gta/articles/snippets/request-model.html",
+          "hash": "9+MaCarQgvoaQOxovy2pFFzuapop8LlV86JQfah6qms="
         }
       },
       "is_incremental": false,
@@ -37263,7 +37359,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Qnvp1p2+rGfsn0uiaTe5EVgaADeXdUeKs2sEv5+YnW8="
+          "hash": "Gc2AItxftl3sciBkAtCo9ZjbmNubbkF+QSYBFAsbC38="
         }
       },
       "is_incremental": false,
@@ -37284,7 +37380,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 138,
+          "total_file_count": 146,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
