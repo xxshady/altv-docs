@@ -188,24 +188,6 @@ However, a player can also be substituted for <code>null</code> which works the 
 <li role="presentation">
 <a href="#tabpanel_bHGHmlrG6S_tab1-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab1-1" data-tab="tab1-1" tabindex="-1">Server-side</a>
 </li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab2-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab2-0" data-tab="tab2-0" tabindex="-1">Client-side</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab2-1" data-tab="tab2-1" tabindex="-1">Server-side</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab3-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab3-0" data-tab="tab3-0" tabindex="-1">Server-side</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab4-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab4-0" data-tab="tab4-0" tabindex="-1">Client-side</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab5-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab5-0" data-tab="tab5-0" tabindex="-1">Client-side code</a>
-</li>
-<li role="presentation">
-<a href="#tabpanel_bHGHmlrG6S_tab5-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tab5-1" data-tab="tab5-1" tabindex="-1">Client-side HTML</a>
-</li>
 </ul>
 <section id="tabpanel_bHGHmlrG6S_tab1-0" role="tabpanel" data-tab="tab1-0">
 
@@ -224,28 +206,45 @@ However, a player can also be substituted for <code>null</code> which works the 
     alt.emitAllClients('sayHello');
 });
 </code></pre>
+</section>
+</div>
 <h2 id="client-to-server">Client to server</h2>
 <p>The client may only emit data to the server-side with <code>emitServer</code>.
 The server-side <code>onServer</code> event handlers will automatically receive the player that sent the event as the first argument.</p>
-</section>
-<section id="tabpanel_bHGHmlrG6S_tab2-0" role="tabpanel" data-tab="tab2-0" aria-hidden="true" hidden="hidden">
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-0" data-tab="tab2-0" tabindex="0" aria-selected="true">Client-side</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_tab2-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_tab2-1" data-tab="tab2-1" tabindex="-1">Server-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_tab2-0" role="tabpanel" data-tab="tab2-0">
 
 <pre><code class="lang-js">alt.on('connectionComplete', () =&gt; {
     alt.emitServer('sayHello');
 });
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S-1_tab2-1" role="tabpanel" data-tab="tab2-1" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-js">alt.onClient('sayHello', player =&gt; {
     alt.log(`${player.name} is saying hello`);
 });
 </code></pre>
+</section>
+</div>
 <h2 id="server-resource-to-server-resource">Server resource to server resource</h2>
 <p>The server &amp; client may only communicate with itself with the <code>on</code> and <code>emit</code> functions.
 They are sent and received across resources as well.</p>
-</section>
-<section id="tabpanel_bHGHmlrG6S_tab3-0" role="tabpanel" data-tab="tab3-0" aria-hidden="true" hidden="hidden">
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_tab3-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_tab3-0" data-tab="tab3-0" tabindex="0" aria-selected="true">Server-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_tab3-0" role="tabpanel" data-tab="tab3-0">
 
 <pre><code class="lang-js">alt.emit('hello', 'this is a message');
 
@@ -253,9 +252,16 @@ alt.on('hello', msg =&gt; {
     alt.log(msg);
 });
 </code></pre>
+</section>
+</div>
 <h2 id="client-resource-to-client-resource">Client resource to client resource</h2>
-</section>
-<section id="tabpanel_bHGHmlrG6S_tab4-0" role="tabpanel" data-tab="tab4-0" aria-hidden="true" hidden="hidden">
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_tab4-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_tab4-0" data-tab="tab4-0" tabindex="0" aria-selected="true">Client-side</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-3_tab4-0" role="tabpanel" data-tab="tab4-0">
 
 <pre><code class="lang-js">alt.emit('hello', 'this is a message');
 
@@ -263,10 +269,20 @@ alt.on('hello', msg =&gt; {
     alt.log(msg);
 });
 </code></pre>
+</section>
+</div>
 <h2 id="client-to-webview-and-back">Client to WebView and back</h2>
 <p><strong>Note:</strong> <code>resource</code> in the URL of the WebView refers to the resource that you are currently writing code for.</p>
-</section>
-<section id="tabpanel_bHGHmlrG6S_tab5-0" role="tabpanel" data-tab="tab5-0" aria-hidden="true" hidden="hidden">
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-4">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-0" data-tab="tab5-0" tabindex="0" aria-selected="true">Client-side code</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-4_tab5-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-4_tab5-1" data-tab="tab5-1" tabindex="-1">Client-side HTML</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-4_tab5-0" role="tabpanel" data-tab="tab5-0">
 
 <pre><code class="lang-js">const webview = new alt.WebView('http://resource/client/html/index.html');
 webview.on('test2', handleFromWebview);
@@ -280,7 +296,7 @@ alt.setTimeout(() =&gt; {
 }, 500);
 </code></pre>
 </section>
-<section id="tabpanel_bHGHmlrG6S_tab5-1" role="tabpanel" data-tab="tab5-1" aria-hidden="true" hidden="hidden">
+<section id="tabpanel_bHGHmlrG6S-4_tab5-1" role="tabpanel" data-tab="tab5-1" aria-hidden="true" hidden="hidden">
 
 <pre><code class="lang-html">&lt;html&gt;
     &lt;head&gt;
