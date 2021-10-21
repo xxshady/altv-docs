@@ -14,6 +14,39 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "altv-docs-gta-assets/images/customlauncher/icon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/customlauncher/icon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-gta-assets/images/customlauncher/impression.png",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/customlauncher/impression.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "altv-docs-gta-assets/images/customlauncher/splash.bmp",
+      "output": {
+        "resource": {
+          "relative_path": "gta/images/customlauncher/splash.bmp"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "altv-docs-gta-assets/images/hud/blip/id-1.jpg",
       "output": {
         "resource": {
@@ -28893,6 +28926,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/cef.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cef.html",
+          "hash": "y/GOdl9ws5eFtqaItVwNx9DLV8MkuCgyshUHudRI7L8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/changelogs/2_2.md",
       "output": {
         ".html": {
@@ -28933,7 +28978,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/changelogs/7_0.html",
-          "hash": "lqnbkMv54fXMm1gs+TZiM8o+XFzJihR5iq01SERSUA4="
+          "hash": "nm3MpChfWYrXoWeUn153d3BLv5S5BzJqUgtxq8BmlRI="
         }
       },
       "is_incremental": false,
@@ -28958,6 +29003,18 @@
         ".html": {
           "relative_path": "articles/commandlineargs.html",
           "hash": "tjqRzOjsWxriTEKMxYoryaHA9VIoYuXcDxyvf6aDmkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/client.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/client.html",
+          "hash": "8IhSImQ+JBUk5GsBUFUW5ckh368y8cXi7JVFwbzBKbo="
         }
       },
       "is_incremental": false,
@@ -29025,11 +29082,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/console.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/console.html",
+          "hash": "HD1PPPqTpMGwMRqLpOz4y0RsBxp+8L/bkMM4lhC6Ak8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/contributing.md",
       "output": {
         ".html": {
           "relative_path": "articles/contributing.html",
           "hash": "fFS3+P16Qyn4Ck9HWE3j5EIlLSK7OI1s7Lh6kQjbOKQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/customlauncher.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/customlauncher.html",
+          "hash": "VCYNh+MSrZR81EXOfRECWXDSREgkoKphsJavoNxsWgM="
         }
       },
       "is_incremental": false,
@@ -29114,6 +29195,18 @@
         ".html": {
           "relative_path": "articles/permissions.html",
           "hash": "bSddzamQwYIrhRqgWA1/H7ozD5XcGoBzJLlqGQF4MPE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/resources.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/resources.html",
+          "hash": "GacInLwTpvJWcAeoZdEXKLPY0W9vHmL2DWXsOGL0jRI="
         }
       },
       "is_incremental": false,
@@ -37371,7 +37464,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "PptyZNS23D+zmNXlvXOkxWlYzjufPTNvInygkrj0V2s="
+          "hash": "sxfmx5BnGeTiOLk7myltRGDzh3k9eGtKQx/cxKTUIGk="
         }
       },
       "is_incremental": false,
@@ -37392,7 +37485,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 147,
+          "total_file_count": 152,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
