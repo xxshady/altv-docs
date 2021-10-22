@@ -156,8 +156,16 @@ Clients may only communicate with WebViews and the server.</p>
 <td>Receives an event. Server only receives server events. Client only receives client events.</td>
 </tr>
 <tr>
+<td>alt.off</td>
+<td>Stop listening to custom or built-in events.</td>
+</tr>
+<tr>
 <td>alt.onServer</td>
 <td>Receives an event emitted from the server on client-side. Triggered with <code>alt.emitClient</code>.</td>
+</tr>
+<tr>
+<td>alt.offServer</td>
+<td>Stop listening to custom events from the server.</td>
 </tr>
 <tr>
 <td>alt.emitClient</td>
@@ -170,6 +178,10 @@ Clients may only communicate with WebViews and the server.</p>
 <tr>
 <td>alt.onClient</td>
 <td>Receives an event emitted from the client on server-side. Triggered with <code>alt.emitServer</code>.</td>
+</tr>
+<tr>
+<td>alt.offClient</td>
+<td>Stop listening to custom events from the client.</td>
 </tr>
 <tr>
 <td>alt.emitServer</td>
@@ -314,6 +326,44 @@ alt.setTimeout(() =&gt; {
         &lt;/script&gt;
     &lt;/body&gt;
 &lt;/html&gt;
+</code></pre>
+</section>
+</div>
+<h2 id="unsubscribes-from-events">Unsubscribes from events</h2>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-5">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-0" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-0" data-tab="tab6-0" tabindex="0" aria-selected="true">alt.off(Server-side/Client-side)</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-1" data-tab="tab6-1" tabindex="-1">alt.offClient(Server-side)</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-5_tab6-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-5_tab6-2" data-tab="tab6-2" tabindex="-1">alt.offServer(Client-side)</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-0" role="tabpanel" data-tab="tab6-0">
+
+<pre><code class="lang-js">alt.on('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.off('customEventName', customEventFunction);
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-1" role="tabpanel" data-tab="tab6-1" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.onClient('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.offClient('customEventName', customEventFunction);
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-5_tab6-2" role="tabpanel" data-tab="tab6-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-js">alt.onServer('customEventName', customEventFunction);
+function customEventFunction() {
+    alt.offServer('customEventName', customEventFunction);
+}
 </code></pre>
 </section>
 </div>
